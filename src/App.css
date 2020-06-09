@@ -1,0 +1,43 @@
+*{
+    border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+}
+.App{
+    background-image: url(./img/img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 568px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    text-align: center;
+    color: #ffffff;
+}
+
+nav{
+    width: 50%;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+article{
+    width: 50%;
+    background: #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+nav a{
+    color: #111;
+}
+
+section{
+    display: flex;
+}

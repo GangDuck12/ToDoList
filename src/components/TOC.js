@@ -15,7 +15,7 @@ const TOC = (props) => {
     lists.push(<li key={data[i].id}><a href={'/contents/'+data[i].id} data-id={data[i].id} onClick={function(e){
       e.preventDefault();
       props.onChangePage(e.target.dataset.id);
-    }}>{data[i].title}</a></li>);
+    }}>{data[i].title} {data[i].time}</a></li>);
     i = i + 1;
   }
 

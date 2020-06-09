@@ -10,7 +10,12 @@ const Content = (props) => {
   return(
     <article>
       <h1>{props.title}</h1>
-      {props.desc}
+      <p>
+        {props.time}
+      </p>
+      <p>
+        {props.desc}
+      </p>  
     </article>
    )
 
