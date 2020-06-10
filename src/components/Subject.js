@@ -10,13 +10,15 @@ const Subject = (props) => {
   return(
     <header>
       <h1>{props.title}</h1>
-      {props.desc}
-      <p>
-        <input className='button' type='button' name='button' value={props.button} onClick={function(e){
-          e.preventDefault();
-          props.onChangePage();
-        }}></input>
-      </p>
+      <div className="pack">
+        <p className="desc">{props.desc}</p>
+        <p>
+          <input className='button' type='button' name='button' value={props.button} onClick={function(e){
+            e.preventDefault();
+            props.onChangePage();
+          }}></input>
+        </p>
+      </div>
     </header>
    )
 

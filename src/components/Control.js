@@ -11,10 +11,7 @@ const Control = (props) => {
 
   return(
     <aside>
-        <input type="button" value="Delete" onClick={function(e){
-         e.preventDefault();
-         props.onChangeMode('delete');   
-        }}></input>
+        <h3>Please enter a schedule!!</h3>
         <form action="/" method="post" onSubmit={function(e){
             e.preventDefault();
             props.onPagePlus(
@@ -38,6 +35,12 @@ const Control = (props) => {
                 </input>
             </p>
             <p><input type="submit"></input></p>
+            <input type="button" value="Delete" onClick={function(e){
+            e.preventDefault();
+            props.onChangeMode('delete');   
+            }}>
+            </input>
+            <p className="delEx">To delete a schedule, click on the list and click the delete button.</p>
         </form>
     </aside>
    )

@@ -1,13 +1,11 @@
 *{
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 0;
     margin: 0;
 }
 .App{
-    background-image: url(./img/img.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 568px;
+    background: #dfe2e8;
+    height: 455px;
 }
 
 ul{
@@ -18,26 +16,80 @@ a{
 }
 
 header{
+    color: #333;
+    border-bottom: 3px solid #85888c;
+}
+header h1{
+    padding: 8px;
     text-align: center;
+    background: #0a224a;
     color: #ffffff;
+    border-radius: 8px;
+}
+
+header .pack{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .desc{
+    padding: 10px;
+}
+
+header .button{
+    margin: 8px;
+    width: 50px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #333333;
 }
 
 nav{
-    width: 50%;
-    background: #ffffff;
+    width: 60%;
+    background: #333333;
     background: rgba(255, 255, 255, 0.3);
 }
 
-article{
-    width: 50%;
-    background: #ffffff;
-    background: rgba(255, 255, 255, 0.3);
+nav ul{
+    list-style: decimal;
+    margin-left: 30px;
 }
+
+nav li{
+    padding: 10px 0 10px 0;
+}
+
 
 nav a{
     color: #111;
 }
 
+article{
+    width: 40%;
+    background: #333333;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+article h1{
+    padding-top: 10px;
+}
+
+article p{
+    padding-top: 10px;
+}
+
 section{
     display: flex;
+} 
+
+aside{
+    margin-left: 10px;
+}
+
+aside form p{
+    padding: 5px;
+}
+
+aside .delEx{
+    font-size: 8px;
 }

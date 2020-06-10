@@ -10,12 +10,9 @@ function App() {
   const [mode,setMode] = useState('view')
   const [seclected_content_id,setSelected_content_id] = useState();
   const [contents,setContents] = useState([
-    {id:1, title:'1st', desc:'1st...', time:'00:00'},
-    {id:2, title:'2nd', desc:'2nd...', time:'00:00'},
-    {id:3, title:'3rd', desc:'3rd...', time:'00:00'}
   ]);
 
-  let max_content_id=3;
+  let max_content_id=0;
   let _contents = null;
   let _title = null;
   let _desc = null;
