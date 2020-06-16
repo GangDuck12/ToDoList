@@ -8,11 +8,11 @@ import Control from './components/Control';
 function App() {
   console.log('app render');
   const [mode,setMode] = useState('view')
+  const [max_content_id,setMax_content_id] = useState(0);
   const [seclected_content_id,setSelected_content_id] = useState();
   const [contents,setContents] = useState([
   ]);
 
-  let max_content_id=0;
   let _contents = null;
   let _title = null;
   let _desc = null;
@@ -70,11 +70,12 @@ function App() {
         <Content title={_title} desc={_desc} time={_time}></Content>
       </section>
       <Control onPagePlus={function(_title,_desc,_time){
-        max_content_id = max_content_id + 1;
+        setMax_content_id(max_content_id + 1);
         let _contents = contents.concat(
           {id:max_content_id, title:_title, desc:_desc,time:_time }
         );
         setContents(_contents);
+        console.log('contents',_contents);
       }}
         onChangeMode={function(_mode){
           if(_mode === 'delete'){

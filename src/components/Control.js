@@ -14,6 +14,7 @@ const Control = (props) => {
         <h3>Please enter a schedule!!</h3>
         <form action="/" method="post" onSubmit={function(e){
             e.preventDefault();
+            console.log('onsubmit!!');
             props.onPagePlus(
                 e.target.title.value,
                 e.target.desc.value,
