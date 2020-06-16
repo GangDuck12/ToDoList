@@ -14,3 +14,7 @@ You will also see any lint errors in the console.
 1. 'modify'버튼을 누르고 해야할일 제목과 부제목 시간을 입력하고 '제출'버튼을 누른다.
 2. 일정을 모두 입력한 뒤에는 'view' 버튼을 눌러 보기모드로 전환을 한다.
 3. 일정을 삭제하기 위해서 다시 'modify'버튼을 누르고 삭제할 일정을 누르고 'delete'버튼을 눌러 삭제한다.
+
+
+![ezgif-3-b83047e75fd3](https://user-images.githubusercontent.com/61913550/84724129-4c7d0780-afc2-11ea-9ccf-f38cc8280ace.gif)
+
