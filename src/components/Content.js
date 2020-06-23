@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{memo} from 'react'
 
 /**
 * @author
@@ -21,4 +21,4 @@ const Content = (props) => {
 
  }
 
-export default Content
+export default memo(Content);
